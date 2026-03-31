@@ -21,8 +21,6 @@ add-book.php
 list-books.php
 
 Adatbázis
-
-Létrehoztam egy adatbázist:
 bookdb
 
 Ebben két tábla található:
