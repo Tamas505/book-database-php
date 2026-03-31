@@ -1,0 +1,116 @@
+A projekt célja egy egyszerű könyvnyilvántartó backend rendszer létrehozása PHP és MySQL segítségével.
+
+
+Technológia:
+XAMPP
+Apache webszerver
+PHP
+MySQL / MariaDB
+phpMyAdmin
+
+
+Projekt struktúra
+
+A projekt a XAMPP htdocs könyvtárában található:
+G:\xampp\htdocs\bookdb
+
+Fő fájlok:
+config.php
+test.php
+add-book.php
+list-books.php
+
+Adatbázis
+
+Létrehoztam egy adatbázist:
+bookdb
+
+Ebben két tábla található:
+
+users
+books
+
+
+users tábla
+A felhasználók adatait tárolja.
+Mezők:
+id (primary key, auto increment)
+username
+email
+password
+created_at
+
+books tábla
+A könyvek adatait tárolja.
+Mezők:
+id
+user_id
+title
+author
+published_year
+description
+created_at
+updated_at
+
+Reláció
+
+A két tábla között kapcsolat van:
+
+books.user_id → users.id
+
+Ez egy foreign key kapcsolat. Ez biztosítja, hogy egy könyv mindig egy létező felhasználóhoz tartozzon.
+
+Beállítás:
+ON DELETE CASCADE
+ON UPDATE CASCADE
+
+PHP adatbázis kapcsolat
+
+A config.php fájl hozza létre a kapcsolatot a PHP és a MySQL adatbázis között PDO segítségével.
+
+PDO előnyei:
+
+biztonságos
+prepared statement támogatás
+adatbázis független megoldás
+
+CREATE művelet
+
+Az add-book.php fájl könyvet ment az adatbázisba.
+
+SQL művelet:
+INSERT INTO books
+
+Prepared statement használata történik a biztonság érdekében.
+
+READ művelet
+
+A list-books.php fájl lekérdezi az összes könyvet.
+
+SQL művelet:
+SELECT * FROM books
+
+A lekérdezett adatokat a PHP foreach ciklussal jeleníti meg.
+
+CRUD rendszer
+
+A projekt jelenleg a CRUD rendszer első két részét tartalmazza:
+
+CREATE – új könyv mentése
+READ – könyvek listázása
+
+A következő lépések lehetnek:
+UPDATE – könyv módosítása
+DELETE – könyv törlése
+
+Összefoglalás
+
+A projekt egy egyszerű backend alkalmazás alapja, amely bemutatja:
+
+PHP és MySQL kapcsolatát
+
+relációs adatbázis használatát
+
+CRUD műveletek működését
+
+backend logika alapjait
