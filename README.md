@@ -22,7 +22,7 @@ Projekt bemásolása a htdocs mappába
 phpMyAdmin-ban adatbázis létrehozása
 SQL fájl importálása (ha van)
 Böngészőben megnyitás:
-http://localhost/bookdb
+[http://localhost/bookdb](http://tamasbooks.great-site.net/index.php)
 
 Képernyőképek:
 ![Könyvlista](screenshots/list.jpg)
