@@ -1,26 +1,38 @@
-# Könyvadatbázis rendszer
+Könyvadatbázis rendszer
 
-Egyszerű PHP + MySQL alapú webalkalmazás könyvek kezelésére.
+Saját fejlesztésű PHP + MySQL alapú webalkalmazás könyvek kezelésére.
+A projekt célja egy teljes CRUD rendszer megvalósítása backend és frontend oldalról.
 
-## Funkciók
-
+ Funkciók:
 - Új könyv hozzáadása
 - Könyvek listázása
 - Könyv szerkesztése
 - Könyv törlése
 - Borítókép feltöltés
 
-## Használt technológiák
+Használt technológiák:
+PHP (backend logika)
+MySQL (adatbázis)
+Bootstrap (layout)
+HTML / CSS / JavaScript
 
-- PHP
-- MySQL
-- Bootstrap
-- HTML / CSS / JavaScript
+Futtatás (lokálisan):
+XAMPP indítása (Apache + MySQL)
+Projekt bemásolása a htdocs mappába
+phpMyAdmin-ban adatbázis létrehozása
+SQL fájl importálása (ha van)
+Böngészőben megnyitás:
+http://localhost/bookdb
 
-## ⚙️ Futtatás (lokálisan)
+Képernyőképek:
+![Könyvlista](screenshots/list.jpg)
+![Új könyv](screenshots/add.jpg)
+![Szerkesztés](screenshots/edit.jpg)
 
-1. XAMPP indítása (Apache + MySQL)
-2. Projekt bemásolása a `htdocs` mappába
-3. phpMyAdmin-ban adatbázis létrehozása
-4. SQL fájl importálása (ha van)
-5. Böngészőben megnyitás:
+
+
+A projekt egy teljes működő CRUD alkalmazást valósít meg.
+Bemutatja az adatbázis-kezelést, űrlapfeldolgozást és az alapvető backend működést.
+
+Készítette:
+Kőműves Tamás
